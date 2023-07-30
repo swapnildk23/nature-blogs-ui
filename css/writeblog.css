@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+    margin-top: 70px;
+}
+
+header {
+    background: rgb(152, 255, 152);
+    position: fixed;
+    top: 0;
+    width:100%;
+    border-bottom:3px solid black;
+}
+
+nav ul a:hover {
+    background: rgb(61, 130, 54);
+    color: rgb(152, 255, 152);
+}
+
+nav ul a:visited {
+    color: rgb(10, 51, 6);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family: "Cantora One", sans-serif;
+    color: rgb(10, 51, 6);
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 30px;
+    padding-left: 40px;
+    flex-grow: 1;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.nav-links li {
+    margin-left: 20px;
+
+}
+
+.nav-links li a {
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 4px;
+}
+.nav-links li a:visited{
+    color: rgb(10, 51, 6);
+}
+.search-bar {
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 0 13px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.search-bar::placeholder {
+    text-align: left;
+
+}
+
+.search-btn,
+.login-btn {
+    border: 1px solid;
+    border-radius: 8px;
+    height: 30px;
+    background-color: transparent;
+    cursor: pointer;
+    width: 60px;
+    color: rgb(152, 255, 152);
+    background-color: green;
+    font-family: "Cantora One", sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+.search-btn:hover,
+.login-btn:hover {
+    background: rgb(10, 51, 6);
+    color: rgb(152, 255, 152);
+}
+
+.toggle-input {
+    display: none;
+}
+
+.toggle-label {
+    display: none;
+}
+
+.toggle-label span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+.write-blog{
+    padding: 40px 60px;
+    background-color: greenyellow;
+    margin-bottom: 180px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 180px;
+    margin-left: 350px;
+    color:  rgb(10, 51, 6);
+    margin-right: 350px;
+}
+.write-blog label{
+    font-size: 17px;
+    
+}
+.write-blog h1{
+    text-align: center;
+}
+.input-line{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid  #333;
+    height: 30px;
+    width: 100%;
+    margin-top: 10px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.input-group{
+    margin-top: 20px;
+    width:30vw;
+}
+.send-btn{
+    border: 1px solid;
+    border-radius: 8px;
+    height: 30px;
+    background-color: transparent;
+    cursor: pointer;
+    width: 60px;
+    color: rgb(152, 255, 152);
+    background-color: green;
+    transition: all 0.3s ease-in-out;
+}
+.btn-file{
+    border: 1px solid;
+    border-radius: 8px;
+    height: 30px;
+    background-color: transparent;
+    cursor: pointer;
+    width: 120px;
+    color: rgb(152, 255, 152);
+    background-color: green;
+    transition: all 0.3s ease-in-out;
+}
+.custom-text{
+    font-size: 14px;
+}
+textarea{
+    width: 100%;
+}

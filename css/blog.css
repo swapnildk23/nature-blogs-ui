@@ -1,0 +1,342 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+    margin-top: 70px;
+    background: url(../media/pexels-liis-saar-832521.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    background: rgb(152, 255, 152);
+    position: fixed;
+    top: 0;
+    width:100%;
+    border-bottom:3px solid black;
+}
+
+nav ul a:hover {
+    background: rgb(61, 130, 54);
+    color: rgb(152, 255, 152);
+}
+
+.items a:visited {
+    color: rgb(10, 51, 6)!important;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family: "Cantora One", sans-serif;
+    color: rgb(10, 51, 6);
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 30px;
+    padding-left: 40px;
+    flex-grow: 1;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.nav-links li {
+    margin-left: 20px;
+
+}
+
+.nav-links li a {
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 4px;
+}
+.nav-links li a:visited{
+    color: rgb(10, 51, 6);
+}
+.search-bar {
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 0 13px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.search-bar::placeholder {
+    text-align: left;
+
+}
+
+.search-btn,
+.login-btn {
+    border: 1px solid;
+    border-radius: 8px;
+    height: 30px;
+    background-color: transparent;
+    cursor: pointer;
+    width: 60px;
+    color: rgb(152, 255, 152);
+    background-color: green;
+    font-family: "Cantora One", sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+.search-btn:hover,
+.login-btn:hover {
+    background: rgb(10, 51, 6);
+    color: rgb(152, 255, 152);
+}
+.search-btn a:visited{
+    color: rgb(152, 255, 152);
+    background-color: green;
+}
+.toggle-input {
+    display: none;
+}
+
+.toggle-label {
+    display: none;
+}
+
+.toggle-label span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container {
+    background-color: rgb(211, 255, 185);
+    display: flex;
+    height: 320px;
+    border-radius: 30px;
+    
+}
+
+.container-left {
+    width: 50%;
+    display: flex;
+    margin-left: 100px;
+    flex-direction: column;
+    justify-content: center;
+}
+.container-left h1{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.container-right {
+    display: flex;
+    margin-left: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-right img {
+    height: 250px;
+    width: 300px;
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.articles-container hr{
+    background-color: black;
+}
+h2{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 40px;
+    text-decoration: underline;
+}
+.article-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.article-main p{
+    font-size: 17px;
+    padding: 0 20px;
+    
+}
+.article-main article{
+    margin: 20px 0;
+}
+.article-main img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 350px;
+    width: 400px;
+    border: 2px solid black;
+    border-radius:10%;
+}
+
+.footer {
+    background-color: rgb(152, 255, 152);
+    padding: 10px;
+    text-align: center;
+    color: rgb(10, 51, 6);
+  }
+  
+  .footer-container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-nav {
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-nav-links,
+  .social-media-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-nav-links li,
+  .social-media-links li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .footer-nav-links li:last-child,
+  .social-media-links li:last-child {
+    margin-right: 0;
+  }
+  
+  .footer-nav-links li a,
+  .social-media-links li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .footer-nav-links li a i,
+  .social-media-links li a i {
+    margin-right: 5px;
+  }
+  
+  .footer-text {
+    font-size: 14px;
+    color: #777;
+    width: 100%;
+    text-align: center;
+  }
+  .footer-text  a{
+    color: #777;
+    text-decoration: none;
+  }
+
+  .footer-nav-links li a:hover{
+     background: rgb(61, 130, 54);
+    color: rgb(152, 255, 152);
+  }
+@media screen and (max-width: 780px){
+    .image-container{
+        height:50%;  
+    }
+    .container-right{
+        margin-left: 75px;;
+    }
+}
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links li {
+        padding: 4px 0px;
+    }
+
+    .toggle-input:checked~.nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .toggle-input:checked~.toggle-label span:first-child {
+        transform: rotate(45deg) translate(6px, 5px);
+    }
+
+    .toggle-input:checked~.toggle-label span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .toggle-input:checked~.toggle-label span:last-child {
+        transform: rotate(-45deg) translate(6px, -5px);
+    }
+
+    .toggle-label {
+        display: block;
+        width: 30px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    .toggle-label span {
+        transition: transform 0.3s ease-in-out;
+
+    }
+
+    .logo {
+        text-align: center;
+        flex-grow: unset;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    nav {
+        position: relative;
+        display: block;
+    }
+    .image-container{
+        display: flex;
+        flex-direction: column-reverse;
+        height:40%
+    }
+    .article-image{
+        margin-left: 50px;
+    }
+    .container-right{
+        margin-right: 60px;
+        
+    }
+    .container-left{
+        margin-left: 130px;
+    }
+    .article-content{
+        display: block;
+    }
+}
+
+
+
+
+
+

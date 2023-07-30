@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+    margin-top: 70px;
+    background:rgb(91, 241, 61); ;
+}
+
+header {
+    background: rgb(152, 255, 152);
+    position: fixed;
+    top: 0;
+    width:100%;
+    border-bottom:3px solid black;
+}
+
+nav ul a:hover {
+    background: rgb(61, 130, 54);
+    color: rgb(152, 255, 152);
+}
+
+nav ul a:visited {
+    color: rgb(10, 51, 6);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family: "Cantora One", sans-serif;
+    color: rgb(10, 51, 6);
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 30px;
+    padding-left: 40px;
+    flex-grow: 1;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.nav-links li {
+    margin-left: 20px;
+
+}
+
+.nav-links li a {
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 4px;
+}
+.nav-links li a:visited{
+    color: rgb(10, 51, 6);
+}
+.search-bar {
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 0 13px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.search-bar::placeholder {
+    text-align: left;
+
+}
+
+.search-btn,
+.login-btn {
+    border: 1px solid;
+    border-radius: 8px;
+    height: 30px;
+    background-color: transparent;
+    cursor: pointer;
+    width: 60px;
+    color: rgb(152, 255, 152);
+    background-color: green;
+    font-family: "Cantora One", sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+.search-btn:hover,
+.login-btn:hover {
+    background: rgb(10, 51, 6);
+    color: rgb(152, 255, 152);
+}
+
+.toggle-input {
+    display: none;
+}
+
+.toggle-label {
+    display: none;
+}
+
+.toggle-label span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+.heading{
+    text-align: center;
+}
+
+.heading h1{
+    font-size: 50px;
+    color: rgb(10, 51, 6);
+    margin-bottom: 10px;
+    margin-top: 90px;
+}
+.heading p{
+    font-size: 20px;
+    margin-bottom: 50px;
+    color: rgb(10, 51, 6);
+}
+.about-us{
+    display:flex;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+    background-color:greenyellow ;
+    
+}
+.about-us img{
+    flex: 50%;
+    max-width: 40%;
+    height: auto;
+    margin: 20px 20px;
+    border-radius: 50%;
+}
+.content{
+    padding: 35px;
+}
+.content h2{
+    font-size: 24px;
+    margin: 15px 0px;
+    color: rgb(10, 51, 6);
+}
+.content p{
+    font-size: 18px;
+    color: rgb(10, 51, 6);
+    line-height: 1.5;
+    margin: 15px 0px;
+}
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        
+    }
+
+    .nav-links li {
+        padding: 4px 0px;
+    }
+
+    .toggle-input:checked~.nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .toggle-input:checked~.toggle-label span:first-child {
+        transform: rotate(45deg) translate(6px, 5px);
+    }
+
+    .toggle-input:checked~.toggle-label span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .toggle-input:checked~.toggle-label span:last-child {
+        transform: rotate(-45deg) translate(6px, -5px);
+    }
+
+    .toggle-label {
+        display: block;
+        width: 30px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    .toggle-label span {
+        transition: transform 0.3s ease-in-out;
+
+    }
+
+    .logo {
+        text-align: center;
+        flex-grow: unset;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    nav {
+        position: relative;
+        display: block;
+    }
+    .about-us{
+        flex-direction: column;
+    }
+    .about-us img{
+        flex: 0 100% ;
+        max-width: 95%;
+    }
+    .content{
+        flex: 0 100%;
+        max-width: 95%;
+        padding:15px ;
+    }
+}
